@@ -1,0 +1,61 @@
+{%raw %}
+{% extends "base.html" %}
+{% load site_tags %}
+{% load staticfiles %}
+{% block head-title %}{{ main_title }}{% endblock %}
+{% block head-content %}
+    <style type="text/css"></style>
+{% endblock %}
+{% block body-content %}
+{% endraw %}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>{{cookiecutter.project_name}} Configuration</h3>
+            </div>
+        </div>
+        {% raw %}
+        <div class="row">
+            <div class="col-sm-12">
+                <form role="form" action="{{ publish_uri }}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="package_id" value="{{ package_id }}"/>
+              
+                    <div class="config-chunk">
+                        <div class="col-sm-4">
+     
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="setting1" class="control-label">Setting1</label>
+                            <input type="text" class="form-control" name="setting1"
+                                   value="{{settings.setting1}}"/>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-4">
+                        <button class="btn btn-primary" type="submit">Update Settings</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /col -->
+        </div>
+
+    </div><!-- container -->
+{% endblock %}
+{% block body-end %}
+
+    <script type="text/javascript" src="{% static "js/knockout-3.1.0.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/moment.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/stickytape.js" %}"></script>
+
+    <script type="text/javascript">
+        {#        //var ajax_uri = '{{ ajax_uri }}';#}
+    </script>
+
+{% endblock %}
+
+{% endraw %}

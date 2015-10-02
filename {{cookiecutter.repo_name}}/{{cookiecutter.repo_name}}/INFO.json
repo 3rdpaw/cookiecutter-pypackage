@@ -1,0 +1,9 @@
+{
+  "name": "{{cookiecutter.repo_name}}",
+  "description": "Edge {{ cookiecutter.project_name}} Adapter",
+  "id": "82f7b436-1643-bb17-4bf3-ec9f9f998c74",
+  "publisher": "Soltra",
+  "edge_min": "2.2",
+  "edge_max": "2.4",
+  "version": "{{cookiecutter.version}}"
+}

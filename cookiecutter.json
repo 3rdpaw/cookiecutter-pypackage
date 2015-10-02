@@ -1,11 +1,13 @@
 {
-	"full_name": "Audrey Roy",
-	"email": "audreyr@gmail.com",
-	"github_username": "audreyr",
-	"project_name": "Python Boilerplate",
+	"full_name": "Michael Butt",
+	"email": "mbutt@soltra.com",
+	"github_username": "3rdpaw",
+	"project_name": "Adapter Boilerplate",
 	"repo_name": "boilerplate",
-	"project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
-	"release_date": "2015-01-11",
+	"project_short_description": "Soltra Edge Adapter Boilerplate.",
+	"release_date": "2015-10-02",
 	"year": "2015",
-	"version": "0.1.0"
+	"version": "0.1.0",
+	"navitem": "Adapter Menu",
+	"uuid": "91b24aec-bba4-4ace-8926-7dd38ce4bbaf"
 }
